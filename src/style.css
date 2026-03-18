@@ -1,0 +1,148 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+nav button {
+  margin-left: auto;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #020617;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* LAYOUT */
+main {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.7;
+  max-width: 800px;
+  color: #cbd5f5;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #020617;
+  padding: 1.8rem;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* LINKS */
+.card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  background: #020617;
+  position: absolute;
+  width: 100%;
+
+}
+
+footer a {
+  margin: 0 0.75rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav button {
+    margin-left: 0;
+  }
+}
+
+
+.card ul {
+  padding-left: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+.card li a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.card li a:hover {
+  text-decoration: underline;
+}
